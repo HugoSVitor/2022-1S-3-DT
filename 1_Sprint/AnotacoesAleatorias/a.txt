@@ -1,0 +1,11 @@
+Classe = forma/molde, conjunto de semelhantes.
+
+Objeto = unidade de uma clssse.
+
+Instanciar = chamar/colocar para a classe.
+
+Prova de conceito = 
+
+Pilare POO = herança, encapsulamento, polimorfismo e abstração (também considerada a base de POO)
+
+encapsulamento = visibilidade

@@ -1,0 +1,87 @@
+							State (Design Pattern)
+
+
+			O que é?
+
+	O State é como se fosse um objeto dentro de uma classe que represente a mesma no código, ele permite que uma classe altere seu comportamento através da alteração interna de seu state. É possível criar diversos states com diferentes comportamentos através de sobrecargas, sobrescritas e polimorfismo. Com o State é possível reduzir a quantidade de estruturas condicionais no código. 
+
+			CONTEXTO/CONTEXT
+
+	Contexto -- No código de exemplo: TrafficLight
+*expõe uma interface que suporta clientes do serviço
+*mantém uma referência a um objeto de estado que define o estado atual
+*permite que objetos State mudem seu estado atual para um estado diferente
+
+			ESTADO/STATE
+
+	Estado -- No código de exemplo: Vermelho, Amarelo, Verde
+*encapsula os valores de estado e o comportamento associado do estado
+
+	Permite que um objeto altere seu comportamento quando seu estado interno muda. O objeto parecerá ter mudado de classe
+
+	POLIMORFISMO
+
+		Onde e quando se utiliza?
+	
+	O State deve ser utilizado de maneira condicional quando o sistema for de grande porte e comprexo, caso contrário, o mesmo pode complicar o sistema.
+ 	Utilize o padrão State quando você tem um objeto que se comporta de maneira diferente dependendo do seu estado atual, quando o número de estados é enorme, e quando o código estado específico muda com frequência.
+	 Utilize o padrão quando você tem uma classe populada com condicionais gigantes que alteram como a classe se comporta de acordo com os valores atuais dos campos da classe.
+	 Utilize o State quando você tem muito código duplicado em muitos estados parecidos e transições de uma máquina de estado baseada em condições.
+
+		
+		Como se utiliza?
+
+
+	
+		Empresas que utilizam.
+
+	Empresas com as seguintes necessidade podem utilizar o State: 
+
+		
+
+		Tecnologias semelhantes
+
+	O Bridge, State, Strategy (e de certa forma o Adapter) têm estruturas muito parecidas. De fato, todos esses padrões estão baseados em composição, o que é delegar o trabalho para outros objetos. Contudo, eles todos resolvem problemas diferentes. 
+
+		Atividade (Não é preciso ser atividade prática!)
+
+----------------------------------------------------------------------------------------------------------------------------
+					1- Dessas opções, qual está Incorreta?
+----------------------------------------------------------------------------------------------------------------------------
+a. Utilize o State quando você tem muito código duplicado em muitos estados parecidos e transições de uma máquina de estado baseada em condições.
+
+b. Utilize o padrão quando você tem uma classe populada com condicionais gigantes que alteram como a classe se comporta de acordo com os valores atuais dos campos da classe.
+
+c. Utilize o padrão State quando você tiver um sistema de pequeno porte e poucas trocas de State.
+
+d. Utilize o padrão State quando você tem um objeto que se comporta de maneira diferente dependendo do seu estado atual.
+------------------------------------------------------------------------------------------------------------------------------
+					2- O padrão State cria uma classe para cada estado possível dentro da classe que o chama.
+------------------------------------------------------------------------------------------------------------------------------
+			a- Verdadeiro				|			b- Falso
+------------------------------------------------------------------------------------------------------------------------------
+					3- Os objetos que participão deste padrão são:
+------------------------------------------------------------------------------------------------------------------------------
+a.Contexto e Estado.*
+
+b.Contexto e Classe.
+
+c.Classe e Estado.
+
+d.Função e Estado
+------------------------------------------------------------------------------------------------------------------------------
+					4- Esta estrutura está diretamente ligada com...
+------------------------------------------------------------------------------------------------------------------------------
+a.Herança.
+
+b.Polimorfismo.*
+
+c.Abstração.
+
+d.Encapsulamento
+------------------------------------------------------------------------------------------------------------------------------
+
+
+		Roteiro (Simples)
+
+	Quando o contexto em que está desenvolvendo requer uma classe que possua comportamentos diferentes dependendo de qual estado se encontra, é difícil manipular, e principalmente organizar a mudança de comportamento que esta classe adquire em situações diferentes , tudo dentro do mesmo bloco de código. O padrão State propõe uma solução para esta complicação, criando basicamente, uma classe para cada estado possível dentro da classe que o chama                         obs: esta estrutura costuma ter relação direta com o polimorfismo 
